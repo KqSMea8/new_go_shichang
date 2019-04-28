@@ -1,10 +1,14 @@
 # drop table if exists user;
+# roles control
+# https://studygolang.com/topics/6999
+# https://github.com/casbin/casbin
 create table user
 (
   id                   bigint not null auto_increment,
   user_name            varchar(100) not null comment '',
   password             varchar(100) not null comment '',
-  is_valid             varchar(100) not null comment 'y:启用，n：未启用',
+  is_valid             varchar(100) not null comment 'Y:启用，N：未启用',
+  is_supper_user       varchar(20) not null comment 'Y/N',
   primary key (id)
 );
 
