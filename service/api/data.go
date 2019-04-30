@@ -9,3 +9,6 @@ func ListDataByDateRange(ctx *gin.Context) {
 // data from part of the ListDataByDay
 func DeleteData(ctx *gin.Context) {
 }
+
+func UpdateData(ctx *gin.Context) {
+}

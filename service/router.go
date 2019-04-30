@@ -8,5 +8,5 @@ import (
 func UseRouters(eng *gin.Engine) {
 	rg := eng.Group("/")
 
-	rg.GET("/", api.ApiList(eng))
+	rg.POST("/UploadFile", api.UploadFile)
 }

@@ -2,6 +2,8 @@
 # roles control
 # https://studygolang.com/topics/6999
 # https://github.com/casbin/casbin
+# demo
+#https://github.com/gin-contrib/authz
 create table user
 (
   id                   bigint not null auto_increment,

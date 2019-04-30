@@ -913,463 +913,648 @@
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
     <table id="230" parent="7" name="basic_daily_data"/>
-    <table id="231" parent="7" name="goods"/>
-    <table id="232" parent="7" name="report_file"/>
-    <table id="233" parent="7" name="user"/>
-    <table id="234" parent="7" name="vendor"/>
-    <table id="235" parent="7" name="vendor_price"/>
-    <table id="236" parent="7" name="vendor_price_history"/>
-    <column id="237" parent="230" name="id">
+    <table id="231" parent="7" name="basic_daily_history"/>
+    <table id="232" parent="7" name="goods"/>
+    <table id="233" parent="7" name="report_file"/>
+    <table id="234" parent="7" name="report_notify"/>
+    <table id="235" parent="7" name="user"/>
+    <table id="236" parent="7" name="vendor"/>
+    <table id="237" parent="7" name="vendor_price"/>
+    <table id="238" parent="7" name="vendor_price_history"/>
+    <column id="239" parent="230" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="238" parent="230" name="driver_name">
+    <column id="240" parent="230" name="driver_name">
       <Position>2</Position>
       <Comment>驾驶员</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="239" parent="230" name="number_flag">
+    <column id="241" parent="230" name="number_flag">
       <Position>3</Position>
       <Comment>编号</Comment>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="230" name="car_number">
+    <column id="242" parent="230" name="car_number">
       <Position>4</Position>
       <Comment>车号</Comment>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="230" name="shop_number">
+    <column id="243" parent="230" name="shop_number">
       <Position>5</Position>
       <Comment>货号</Comment>
       <DataType>varchar(60)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="230" name="gross_weight">
+    <column id="244" parent="230" name="gross_weight">
       <Position>6</Position>
       <Comment>毛重</Comment>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="230" name="tare_weight">
+    <column id="245" parent="230" name="tare_weight">
       <Position>7</Position>
       <Comment>皮重</Comment>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="230" name="net_weight">
+    <column id="246" parent="230" name="net_weight">
       <Position>8</Position>
       <Comment>净重</Comment>
       <DataType>varchar(60)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="245" parent="230" name="vendor_net_weight">
+    <column id="247" parent="230" name="vendor_net_weight">
       <Position>9</Position>
       <Comment>供应商净重</Comment>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="230" name="vendor">
+    <column id="248" parent="230" name="vendor">
       <Position>10</Position>
       <Comment>供应商,例如成协</Comment>
       <DataType>varchar(60)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="230" name="vendor_sub_name">
+    <column id="249" parent="230" name="vendor_sub_name">
       <Position>11</Position>
       <Comment>供应商，例如成协(坝仔村)</Comment>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="230" name="group_name">
+    <column id="250" parent="230" name="group_name">
       <Position>12</Position>
       <Comment>石粉、石仔</Comment>
       <DataType>varchar(60)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="230" name="batch_id">
+    <column id="251" parent="230" name="batch_id">
       <Position>13</Position>
       <Comment>导入批次号</Comment>
       <DataType>varchar(60)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="250" parent="230" name="row_index">
+    <column id="252" parent="230" name="row_index">
       <Position>14</Position>
       <Comment>行号</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="251" parent="230" name="import_date">
+    <column id="253" parent="230" name="import_date">
       <Position>15</Position>
       <Comment>导入时间</Comment>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="252" parent="230" name="day_str">
+    <column id="254" parent="230" name="day_str">
       <Position>16</Position>
       <Comment>称磅日期yyyymmdd</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="230" name="time_str">
+    <column id="255" parent="230" name="time_str">
       <Position>17</Position>
       <Comment>称磅时间 hh:mm:ss</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="254" parent="230" name="weight_date">
+    <column id="256" parent="230" name="weight_date">
       <Position>18</Position>
       <Comment>称磅时间yyyymmdd hh:mm:ss</Comment>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="255" parent="230" name="basic_daily_data_idx1">
+    <index id="257" parent="230" name="basic_daily_data_idx1">
       <ColNames>number_flag</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="256" parent="230" name="PRIMARY">
+    <key id="258" parent="230" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="257" parent="230" name="basic_daily_data_idx1">
+    <key id="259" parent="230" name="basic_daily_data_idx1">
       <ColNames>number_flag</ColNames>
       <UnderlyingIndexName>basic_daily_data_idx1</UnderlyingIndexName>
     </key>
-    <column id="258" parent="231" name="id">
+    <column id="260" parent="231" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="259" parent="231" name="goods_name">
+    <column id="261" parent="231" name="driver_name">
+      <Position>2</Position>
+      <Comment>驾驶员</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="262" parent="231" name="number_flag">
+      <Position>3</Position>
+      <Comment>编号</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="263" parent="231" name="car_number">
+      <Position>4</Position>
+      <Comment>车号</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="264" parent="231" name="shop_number">
+      <Position>5</Position>
+      <Comment>货号</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="265" parent="231" name="gross_weight">
+      <Position>6</Position>
+      <Comment>毛重</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="266" parent="231" name="tare_weight">
+      <Position>7</Position>
+      <Comment>皮重</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="267" parent="231" name="net_weight">
+      <Position>8</Position>
+      <Comment>净重</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="268" parent="231" name="vendor_net_weight">
+      <Position>9</Position>
+      <Comment>供应商净重</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="269" parent="231" name="vendor">
+      <Position>10</Position>
+      <Comment>供应商,例如成协</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="270" parent="231" name="vendor_sub_name">
+      <Position>11</Position>
+      <Comment>供应商，例如成协(坝仔村)</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="271" parent="231" name="group_name">
+      <Position>12</Position>
+      <Comment>石粉、石仔</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="272" parent="231" name="batch_id">
+      <Position>13</Position>
+      <Comment>导入批次号</Comment>
+      <DataType>varchar(60)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="273" parent="231" name="row_index">
+      <Position>14</Position>
+      <Comment>行号</Comment>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="274" parent="231" name="import_date">
+      <Position>15</Position>
+      <Comment>导入时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="275" parent="231" name="day_str">
+      <Position>16</Position>
+      <Comment>称磅日期yyyymmdd</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="276" parent="231" name="time_str">
+      <Position>17</Position>
+      <Comment>称磅时间 hh:mm:ss</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="277" parent="231" name="weight_date">
+      <Position>18</Position>
+      <Comment>称磅时间yyyymmdd hh:mm:ss</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="278" parent="231" name="price_batch_id">
+      <Position>19</Position>
+      <Comment>采用的价格批次号</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="279" parent="231" name="basic_daily_history_idx1">
+      <ColNames>number_flag</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="280" parent="231" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="281" parent="232" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="282" parent="232" name="goods_name">
       <Position>2</Position>
       <Comment>货物名称</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="231" name="goods_alias">
+    <column id="283" parent="232" name="goods_alias">
       <Position>3</Position>
       <Comment>货物别名</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="261" parent="231" name="group_name">
+    <column id="284" parent="232" name="group_name">
       <Position>4</Position>
       <Comment>大类:石仔、石粉</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="262" parent="231" name="order_index">
+    <column id="285" parent="232" name="order_index">
       <Position>5</Position>
       <Comment>排序</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="263" parent="231" name="goods_idx1">
+    <index id="286" parent="232" name="goods_idx1">
       <ColNames>goods_name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="264" parent="231" name="PRIMARY">
+    <key id="287" parent="232" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="265" parent="231" name="goods_idx1">
+    <key id="288" parent="232" name="goods_idx1">
       <ColNames>goods_name</ColNames>
       <UnderlyingIndexName>goods_idx1</UnderlyingIndexName>
     </key>
-    <column id="266" parent="232" name="id">
+    <column id="289" parent="233" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="232" name="report_type">
+    <column id="290" parent="233" name="report_type">
       <Position>2</Position>
       <Comment>WX_DAILY/DAILY/WEEKLY/MONTHLY</Comment>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="232" name="file_name">
+    <column id="291" parent="233" name="file_name">
       <Position>3</Position>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="232" name="batch_id">
+    <column id="292" parent="233" name="batch_id">
       <Position>4</Position>
       <Comment>批次号</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="232" name="day_str">
+    <column id="293" parent="233" name="day_str">
       <Position>5</Position>
       <Comment>报表日期yyyymmdd</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="232" name="report_date">
+    <column id="294" parent="233" name="report_date">
       <Position>6</Position>
       <Comment>报表日期yyyymmdd hh:mm:ss</Comment>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="272" parent="232" name="report_file_idx2">
+    <index id="295" parent="233" name="report_file_idx2">
       <ColNames>report_type</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="273" parent="232" name="report_file_idx1">
+    <index id="296" parent="233" name="report_file_idx1">
       <ColNames>report_date</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="274" parent="232" name="PRIMARY">
+    <key id="297" parent="233" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="275" parent="232" name="report_file_idx2">
+    <key id="298" parent="233" name="report_file_idx2">
       <ColNames>report_type</ColNames>
       <UnderlyingIndexName>report_file_idx2</UnderlyingIndexName>
     </key>
-    <key id="276" parent="232" name="report_file_idx1">
+    <key id="299" parent="233" name="report_file_idx1">
       <ColNames>report_date</ColNames>
       <UnderlyingIndexName>report_file_idx1</UnderlyingIndexName>
     </key>
-    <column id="277" parent="233" name="id">
+    <column id="300" parent="234" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="233" name="user_name">
+    <column id="301" parent="234" name="date_str">
       <Position>2</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="233" name="password">
+    <column id="302" parent="234" name="weight_date">
+      <Position>3</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="303" parent="234" name="handle_flag">
+      <Position>4</Position>
+      <Comment>Y/N</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="304" parent="234" name="report_notify_idx1">
+      <ColNames>handle_flag</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="305" parent="234" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="306" parent="235" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="307" parent="235" name="user_name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="308" parent="235" name="password">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="233" name="is_valid">
+    <column id="309" parent="235" name="is_valid">
       <Position>4</Position>
       <Comment>Y:启用，N：未启用</Comment>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="233" name="is_supper_user">
+    <column id="310" parent="235" name="is_supper_user">
       <Position>5</Position>
       <Comment>Y/N</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="282" parent="233" name="user_idx1">
+    <index id="311" parent="235" name="user_idx1">
       <ColNames>user_name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="283" parent="233" name="PRIMARY">
+    <key id="312" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="284" parent="233" name="user_idx1">
+    <key id="313" parent="235" name="user_idx1">
       <ColNames>user_name</ColNames>
       <UnderlyingIndexName>user_idx1</UnderlyingIndexName>
     </key>
-    <column id="285" parent="234" name="id">
+    <column id="314" parent="236" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="234" name="vendor_name">
+    <column id="315" parent="236" name="vendor_name">
       <Position>2</Position>
       <Comment>供应商名称,例如成协</Comment>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="234" name="tel">
+    <column id="316" parent="236" name="tel">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="234" name="contact_name">
+    <column id="317" parent="236" name="contact_name">
       <Position>4</Position>
       <Comment>联系人</Comment>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="234" name="cost_advance">
+    <column id="318" parent="236" name="cost_advance">
       <Position>5</Position>
       <Comment>预付金额元</Comment>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="234" name="cost_alert">
+    <column id="319" parent="236" name="cost_alert">
       <Position>6</Position>
       <Comment>预警线</Comment>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="234" name="need_cost_advance">
+    <column id="320" parent="236" name="need_cost_advance">
       <Position>7</Position>
       <Comment>Y:需要预付；N:不需要预付</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="234" name="is_valid">
+    <column id="321" parent="236" name="is_valid">
       <Position>8</Position>
       <Comment>Y:启用，N：未启用</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="293" parent="234" name="vendor_idx1">
+    <index id="322" parent="236" name="vendor_idx1">
       <ColNames>vendor_name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="294" parent="234" name="PRIMARY">
+    <key id="323" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="295" parent="234" name="vendor_idx1">
+    <key id="324" parent="236" name="vendor_idx1">
       <ColNames>vendor_name</ColNames>
       <UnderlyingIndexName>vendor_idx1</UnderlyingIndexName>
     </key>
-    <column id="296" parent="235" name="id">
+    <column id="325" parent="237" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="235" name="vendor">
+    <column id="326" parent="237" name="vendor">
       <Position>2</Position>
       <Comment>供应商</Comment>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="235" name="goods_name">
+    <column id="327" parent="237" name="goods_name">
       <Position>3</Position>
       <Comment>货物名称</Comment>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="235" name="unit_price">
+    <column id="328" parent="237" name="unit_price">
       <Position>4</Position>
       <Comment>价格</Comment>
       <DataType>float(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="235" name="update_date">
+    <column id="329" parent="237" name="batch_id">
       <Position>5</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="330" parent="237" name="update_date">
+      <Position>6</Position>
       <Comment>yyyymmdd hh:mm:ss</Comment>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="301" parent="235" name="vendor_price_idx1">
+    <index id="331" parent="237" name="vendor_price_idx1">
       <ColNames>vendor
 goods_name</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="302" parent="235" name="PRIMARY">
+    <key id="332" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="303" parent="235" name="vendor_price_idx1">
+    <key id="333" parent="237" name="vendor_price_idx1">
       <ColNames>vendor
 goods_name</ColNames>
       <UnderlyingIndexName>vendor_price_idx1</UnderlyingIndexName>
     </key>
-    <column id="304" parent="236" name="id">
+    <column id="334" parent="238" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="305" parent="236" name="vendor">
+    <column id="335" parent="238" name="vendor">
       <Position>2</Position>
       <Comment>供应商</Comment>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="306" parent="236" name="goods_name">
+    <column id="336" parent="238" name="goods_name">
       <Position>3</Position>
       <Comment>货物名称</Comment>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="236" name="unit_price">
+    <column id="337" parent="238" name="unit_price">
       <Position>4</Position>
       <Comment>价格</Comment>
       <DataType>float(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="236" name="update_date">
+    <column id="338" parent="238" name="batch_id">
       <Position>5</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="339" parent="238" name="update_date">
+      <Position>6</Position>
       <Comment>yyyymmdd hh:mm:ss</Comment>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="309" parent="236" name="vendor_price_history_idx1">
+    <index id="340" parent="238" name="vendor_price_history_idx1">
       <ColNames>vendor
 goods_name</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="310" parent="236" name="vendor_price_history_idx2">
+    <index id="341" parent="238" name="vendor_price_history_idx2">
       <ColNames>update_date</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="311" parent="236" name="PRIMARY">
+    <key id="342" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

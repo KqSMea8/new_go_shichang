@@ -19,6 +19,7 @@ create table basic_daily_data
    day_str              varchar(20) not null comment '称磅日期yyyymmdd',
    time_str             varchar(20) not null comment '称磅时间 hh:mm:ss',
    weight_date          datetime not null comment '称磅时间yyyymmdd hh:mm:ss',
+   price_batch_id       varchar(100) not null comment '采用的价格批次号',
    primary key (id)
 );
 
